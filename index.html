@@ -19,7 +19,7 @@
             background-color: purple;
             width: 100vw;
             height: 100vh;
-            
+
         }
 
         .container {
@@ -91,6 +91,8 @@
             height: 100%;
             padding: 20px 100px;
             border-radius: 10px;
+            background: -webkit-linear-gradient(90deg, rgb(56, 19, 56, 0.5) 50%, rgb(34, 10, 34) 100%);
+            background: -moz-linear-gradient(90deg, rgb(56, 19, 56, 0.5) 50%, rgb(34, 10, 34) 100%);
             background: linear-gradient(90deg, rgb(56, 19, 56, 0.5) 50%, rgb(34, 10, 34) 100%);
         }
 
@@ -188,8 +190,46 @@
             filter: blur(3px);
             transform: skewX(-10deg);
         }
+
+        @media(max-width: 500px) {
+            .body {
+                padding: 10px;
+            }
+            .container {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
+            .main-box {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+                text-align: center;
+                border-radius: 10px;
+                background-color: rgba(34, 10, 34, 0.7);
+            }
+        }
+
+        .text-red {
+            color: #f00;
+        }
+
+        .footer {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            color: #fff;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 12px;
+            letter-spacing: 1px;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body class="body">
     <div class="container">
         <div class="box-1"></div>
@@ -214,8 +254,32 @@
 
             </div>
             <div class="sun"></div>
+            <div class="footer">
+                with
+                <span class="text-red">&#10084;</span> from Oseni Adekunle
+            </div>
         </div>
     </div>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+        var sc_project = 11587612;
+        var sc_invisible = 1;
+        var sc_security = "f4bdff07";
+        var scJsHost = (("https:" == document.location.protocol) ?
+            "https://secure." : "http://www.");
+        document.write("<sc" + "ript type='text/javascript' src='" +
+            scJsHost +
+            "statcounter.com/counter/counter.js'></" + "script>");
+    </script>
+    <noscript>
+        <div class="statcounter">
+            <a title="Web Analytics" href="http://statcounter.com/" target="_blank">
+                <img class="statcounter" src="//c.statcounter.com/11587612/0/f4bdff07/1/" alt="Web
+    Analytics">
+            </a>
+        </div>
+    </noscript>
+    <!-- End of StatCounter Code for Default Guide -->
 </body>
 
 </html>
