@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Happy New Year</title>
+    <link href="https://fonts.googleapis.com/css?family=Shrikhand" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .body {
+            margin: 0;
+            padding: 50px 100px;
+            background-color: purple;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+
+        .container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .box-1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(255, 255, 255, 0.2);
+            width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            filter: blur(1px);
+        }
+
+        .box-2 {
+            position: absolute;
+            top: -20px;
+            right: -20px;
+            background-color: rgba(234, 243, 111, 0.3);
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            filter: blur(1px);
+        }
+
+        .box-3 {
+            position: absolute;
+            bottom: -50px;
+            right: 40%;
+            background-color: rgba(173, 152, 250, 0.3);
+            width: 200px;
+            height: 300px;
+            transform: skewX(-30deg);
+            filter: blur(2px);
+        }
+
+        .box-4 {
+            position: absolute;
+            bottom: -50px;
+            left: 0;
+            border-top: 10px solid rgba(95, 213, 243, 1);
+            border-left: 10px solid rgba(95, 213, 243, 1);
+            border-right: 10px solid rgba(95, 213, 243, 1);
+            width: 200px;
+            height: 50px;
+            filter: blur(10px);
+        }
+
+        .box-5 {
+            position: absolute;
+            bottom: 50px;
+            left: 0;
+            border: 10px solid rgba(241, 222, 51, 0.6);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            transform: translateX(-10%);
+        }
+
+        .main-box {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            padding: 20px 100px;
+            border-radius: 10px;
+            background: linear-gradient(90deg, rgb(56, 19, 56, 0.5) 50%, rgb(34, 10, 34) 100%);
+        }
+
+        .big-text {
+            text-transform: uppercase;
+            font-size: 60px;
+            font-family: 'Shrikhand', cursive;
+            color: #fff;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .sun {
+            position: absolute;
+            top: 50px;
+            right: 30%;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border-top: 20px solid rgba(241, 222, 51, 1);
+            transform: rotate(30deg);
+            filter: blur(2px);
+        }
+
+        .box-11 {
+            position: absolute;
+            bottom: 20%;
+            left: 20%;
+            border: 1px solid rgba(95, 213, 243, 1);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            transform: translateX(-10%);
+        }
+
+        .box-12 {
+            position: absolute;
+            top: 20%;
+            left: 20%;
+            border: 1px solid rgba(241, 222, 51, 1);
+            width: 10px;
+            height: 10px;
+            transform: translateX(-10%);
+        }
+
+        .box-13 {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            border: 1px solid rgb(235, 150, 129);
+            width: 10px;
+            height: 10px;
+            transform: skewX(10deg);
+        }
+
+        .box-13 {
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            border: 2px solid rgb(235, 150, 129);
+            width: 10px;
+            height: 10px;
+            transform: skewX(10deg);
+        }
+
+        .box-14 {
+            position: absolute;
+            top: 30%;
+            right: 10px;
+            border: 2px solid rgb(134, 15, 81);
+            border-radius: 50%;
+            width: 15px;
+            height: 15px;
+        }
+
+        .box-15 {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            border: 2px solid rgb(235, 150, 129);
+            width: 20px;
+            height: 20px;
+            filter: blur(5px);
+        }
+
+        .box-16 {
+            position: absolute;
+            bottom: 10%;
+            right: 30%;
+            border: 2px solid rgba(241, 222, 51, 1);
+            width: 20px;
+            height: 20px;
+            filter: blur(3px);
+            transform: skewX(-10deg);
+        }
+    </style>
+</head>
+<body class="body">
+    <div class="container">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <div class="box-3"></div>
+        <div class="box-4"></div>
+        <div class="box-5"></div>
+        <div class="box-6"></div>
+        <div class="main-box">
+            <div class="box-11"></div>
+            <div class="box-12"></div>
+            <div class="box-13"></div>
+            <div class="box-14"></div>
+            <div class="box-15"></div>
+            <div class="box-16"></div>
+            <div class="box-17"></div>
+            <div class="box-18"></div>
+            <div class="big-text">
+                HAPPY
+                <br> NEW YEAR
+                <br> *2018*
+
+            </div>
+            <div class="sun"></div>
+        </div>
+    </div>
+</body>
+
+</html>
